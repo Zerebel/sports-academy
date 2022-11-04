@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PU SRC Sports Academy</title>
     <link rel="stylesheet" href="assets/css/output.css" />
+    <!-- #region Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <!-- #endregion Fonts -->
   </head>
-  <body></body>
+  <body class="mx-4 md:mx-8 lg:mx-14">
+    <header class="flex justify-between lg:p-4 items-center">
+      <!-- Logo -->
+      <p class="text-3xl">SRC Sports</p>
+      <!-- Navigation -->
+      <nav>
+        <button class="relative md:hidden flex cursor-pointer" id="menu">
+          <i class="material-icons">menu</i>
+        </button>
+        <ul
+          class="absolute hidden flex-col right-0 mt-4 bg-slate-200 px-6 md:bg-white md:mt-auto md:right-auto md:relative md:flex md:flex-row gap-4 py-2 md:py lg:gap-6 text-lg"
+          id="menu_items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">New Activities</a></li>
+          <li><a href="#">Book Online</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
