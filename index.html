@@ -14,35 +14,118 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet" />
     <link
+      href="https://fonts.googleapis.com/css?family=Poppins:regular"
+      rel="stylesheet" />
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet" />
     <!-- #endregion Fonts -->
   </head>
-  <body class="mx-4 md:mx-8 lg:mx-14">
-    <header class="flex justify-between lg:p-4 items-center">
-      <!-- Logo -->
-      <div class="bg-white text-3xl">
-        <p>SRC</p>
+  <body class="bg-stone-100">
+    <header
+      class="flex flex-col h-[50vh] lg:h-[80vh] bg-stadium bg-cover bg-no-repeat rounded-bl-3xl"
+      id="top">
+      <div
+        class="flex w-full h-fit justify-between lg:p-4 items-center md:px-8 lg:px-14 py-4"
+        id="header">
+        <!-- Logo -->
+        <div class="text-3xl">
+          <p>SRC</p>
+        </div>
+        <!-- Navigation -->
+        <nav class="relative font-poppins z-50">
+          <button class="md:hidden flex cursor-pointer" id="menu">
+            <i class="material-icons">menu</i>
+          </button>
+          <ul
+            class="absolute hidden flex-col right-0 mt-4 md:mt-auto md:right-auto md:relative md:flex md:flex-row gap-4 lg:gap-6 bg-[#ADCAD6] md:bg-inherit backdrop-blur-3xl text-xl w-[60vw] md:w-auto pl-4 py-4 md:py-0 md:pl-0"
+            id="menu_items">
+            <li><a href="#" class="" data-active="true">Home</a></li>
+            <li><a href="#" class="">Blog</a></li>
+            <li><a href="#" class="">Register</a></li>
+            <li><a href="#" class="">About</a></li>
+            <li><a href="#" class="">New Activities</a></li>
+            <li><a href="#" class="">Book Online</a></li>
+            <li><a href="#" class="">Events</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Navigation -->
-      <nav class="bg-orange-500 ">
-        <button class="relative md:hidden flex cursor-pointer" id="menu">
-          <i class="material-icons">menu</i>
-        </button>
-        <ul
-          class="absolute hidden flex-col right-0 mt-4 bg-slate-200 px-6 md:bg-white md:mt-auto md:right-auto md:relative md:flex md:flex-row gap-4 py-2 md:py lg:gap-6 text-lg"
-          id="menu_items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">New Activities</a></li>
-          <li><a href="#">Book Online</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </nav>
+      <!-- Intro Message -->
+      <div
+        class="h-full flex flex-col items-center justify-center text-center font-quicksand rounded-b-full gap-8"
+        id="bg-intro">
+        <!-- Text -->
+        <h1
+          class="text-3xl md:text-5xl lg:text-7xl font-extrabold uppercase animate-pulse leading-10 tracking-widest"
+          id="intro">
+          PUC SRC Sports
+        </h1>
+        <p id="description" class="capitalize text-2xl"></p>
+      </div>
     </header>
-    <main></main>
+    <!-- Cards -->
+    <div
+      class="flex flex-wrap justify-around w-full font-poppins p-8 lg:px-32 gap-14">
+      <!-- Card 1 -->
+      <div
+        class="flex-1 px-8 bg-sky-100 rounded-xl py-4 flex flex-col items-center gap-4">
+        <img
+          src="assets/img/swimming.jpg"
+          alt="swimming"
+          class="w-fit lg:w-3/4 rounded-xl" />
+        <div
+          class="flex flex-col justify-center items-center gap-4 text-center">
+          <p>PUC Summer Swimming</p>
+          <p>PUC Gymnasiade - School Summer Games</p>
+          <p>11/02-19/02</p>
+          <p></p>
+        </div>
+        <!-- Buttons -->
+        <div class="flex gap-2 self-end">
+          <a
+            href="#"
+            target="_self"
+            class="bg-sky-600 hover:text-sky-100 hover:bg-green-900 p-1 rounded-lg text-yellow-50">
+            Register Here
+          </a>
+          <a
+            href="#"
+            target="_self"
+            class="bg-sky-600 hover:text-sky-100 hover:bg-green-900 p-1 rounded-lg text-yellow-50">
+            Subscribe
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="flex-1 px-8 bg-sky-100 rounded-xl py-4 flex flex-col items-center gap-4">
+        <img
+          src="assets/img/football.jpg"
+          alt="swimming"
+          class="w-fit lg:w-3/4 rounded-xl" />
+        <div
+          class="flex flex-col justify-center items-center gap-4 text-center">
+          <p>PUC Spring Football</p>
+          <p>PUC Football - School Summer Games</p>
+          <p>09/06-21/07</p>
+          <!-- Buttons -->
+          <div class="flex gap-2 self-end">
+            <a
+              href="#"
+              target="_self"
+              class="bg-sky-600 hover:text-sky-100 hover:bg-green-900 p-1 rounded-lg text-yellow-50">
+              Register Here
+            </a>
+            <a
+              href="#"
+              target="_self"
+              class="bg-sky-600 hover:text-sky-100 hover:bg-green-900 p-1 rounded-lg text-yellow-50">
+              Subscribe
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
